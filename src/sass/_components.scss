@@ -1,0 +1,75 @@
+//Navbar
+.navbar {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+///Product
+.box {
+    font-size: 1.5rem;
+    border: none !important;
+    height: 41rem;
+    padding: 1.6rem;
+    cursor: pointer;
+
+    &__img {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 1.2rem;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__title {
+        display: flex;
+        align-items: baseline;
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 0;
+       
+    }
+    &__icon-tikinow {
+        position: relative;
+        display: inline-block;
+        width: 53px;
+        height: 15px;
+        margin-right: 7px;
+        margin-bottom: 8px;
+        background-image: url(https://salt.tikicdn.com/desktop/img/tiki-now-15.png);
+        background-size: 53px 15px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -4px;
+            width: 1px;
+            height: 10px;
+            margin-top: -3px;
+            background-color: #D8D8D8;
+        }
+    }
+
+    &__author {
+        color: #777;
+        font-size: 1.1rem;
+        display: flex;
+        margin: 0;
+    }
+
+    &__price {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    &:hover {
+        box-shadow: 0 0 20px rgba(0,0,0,.1);
+    }
+}
+
+
+
